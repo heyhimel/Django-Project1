@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add to cart</title>
+{%load static%}
+<link rel="stylesheet" href="{% static 'card_shop_now.css'%} ">
+</head>
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: black;
+    font-size: 22px;
+    border: 300px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  </style>
+<body>
+    <div class="container">
+        <ul>
+            <li>
+                <div class="title"><h2 style="margin:0px;">Premium T-Shirt</h2>
+                  {%load static%}
+                    <img src="{% static 'blue_tee.jpeg'%}" alt="Premium Hoodie" style="width:100%" height="315px">
+                    <p class="price">500 tk</p>
+                    <div class="card">
+                        <p><button onclick="window.location.href='http://127.0.0.1:8000/shop_now/checkout/';">Add to cart</button></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+            <div class="title"><h2 style="margin:0px;">Premium Quality Jacket</h2>
+              {%load static%}
+              <img src="{% static 'img_girl.jpg'%}" alt="Premium Hoodie" style="width:100%" height="315px">
+              <p class="price">1000 tk</p>
+              <div class="card">
+                  <p><button>Add to cart</button></p>
+              </div>
+            </div>
+          </li>
+            <li><div class="title"><h2 style="margin:0px;">100% Cotton Tee</h2>
+              {%load static%}
+                    <img src="{% static 'Ghosted-Front.jpeg'%}" alt="100% Cotton Tee" style="width:100%" height="315px">
+                    <p class="price">400 tk</p>
+                    <div class="card">
+                        <p><button>Add to cart</button></p>
+                    </div>
+            </div>
+          </li>
+            <li><div class="title"><h2 style="margin:0px;">Comfort Tee</h2>
+              {%load static%}
+                    <img src="{% static 'steampunk--silver-tds-garment.jpg'%}" alt="100% Cotton Tee" style="width:100%" height="315px">
+                    <p class="price">450 tk</p>
+                    <div class="card">
+                        <p><button>Add to cart</button></p>
+                    </div>
+            </div>
+          </li>
+            <li><div class="title"><h2 style="margin:0px;">Women Cotton Tee</h2>
+              {%load static%}
+                    <img src="{% static 't-shirt-design-joker.png'%}" alt="100% Cotton Tee" style="width:100%" height="315px">
+                    <p class="price">550 tk</p>
+                    <div class="card">
+                        <p><button>Add to cart</button></p>
+                    </div>
+            </div>
+          </li>
+            <li><div class="title"><h2 style="margin:0px;">Islamic T-Shirt</h2>
+              {%load static%}
+                    <img src="{% static 'Islamic_T-shirt-Paste.png'%}" alt="100% Cotton Tee" style="width:100%" height="315px">
+                    <p class="price">450 tk</p>
+                    <div class="card">
+                        <p><button >Add to cart</button></p>
+                    </div>
+            </div>
+          </li>
+            <li>
+              <div class="title"><h2 style="margin:0px;">Hoddie</h2>
+                {%load static%}
+                <img src="{% static 'D7.png'%}" alt="Premium Hoodie" style="width:100%" height="315px">
+                <p class="price">600 tk</p>
+                <div class="card">
+                    <p><button>Add to cart</button></p>
+                </div>
+            </div>
+          </li>
+            <li>
+              <div class="title"><h2 style="margin:0px;">Best T shirt</h2>
+                {%load static%}
+                <img src="{% static 'red_tee.png'%}" alt="Premium Hoodie" style="width:100%" height="315px">
+                <p class="price">700 tk</p>
+                <div class="card">
+                    <p><button>Add to cart</button></p>
+                </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% load static %} <!--aikhane static ta ke load kora hoise-->
+
+
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Article App</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}" >  <!--aikhane static file ta ke include kora hoise-->
+    </head>
+    <body>
+        <a href ="http://127.0.0.1:8000/about/"> Tanvir er About Page </a>
+        <a href ="http://127.0.0.1:8000/admin/"> Django Admin Panel </a>
+        <a href ="http://127.0.0.1:8000/"> Homepage </a>
+        <a href ="http://127.0.0.1:8000/about/"> About Of Tanvir </a>
+        <h1>My First Django App creating</h1>
+        {% for i in dictionary1 %}
+        <h2>{{ i.title }}</h2>
+        <p>{{ i.slug }}</p>
+        <p>{{ i.body }}</p>
+        <p>{{ i.date }}</p>
+        {% endfor %}
+        {% for x in dictionary %}
+        <h2>{{ x.title }}</h2>
+        <p>{{ x.slug }}</p>
+        <p>{{ x.body }}</p>
+        <p>{{ x.date }}</p>
+        {% endfor %}
+    </body>
+</html>
